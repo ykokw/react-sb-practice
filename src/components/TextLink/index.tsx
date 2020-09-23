@@ -1,25 +1,29 @@
 import React from "react";
+import styled from 'styled-components/macro';
 
-interface TextLinkProps {
+interface TextLinkProps extends React.ComponentPropsWithoutRef<'a'> {
   bold?: boolean;
   color?: "blue" | "gray";
 }
 
-const TextLink: React.FC<JSX.IntrinsicElements["a"] & TextLinkProps> = ({
+const StyledAnchorElement = styled.a<TextLinkProps>`
+  color: ${({ color }) => color === "blue" ? "#61dafb" : "#ccc"};
+  font-weight: ${({ bold }) => bold ? "bold" : "normal"};
+`;
+
+const TextLink: React.FC<TextLinkProps> = ({
   children,
   bold = false,
   color = "blue",
   ...rest
 }) => (
-  <a
-    style={{
-      color: color === "blue" ? "#61dafb" : "#ccc",
-      fontWeight: bold ? "bold" : "normal",
-    }}
+  <StyledAnchorElement
+    bold={bold}
+    color={color}
     {...rest}
   >
     {children}
-  </a>
+  </StyledAnchorElement>
 );
 
 export default TextLink;
