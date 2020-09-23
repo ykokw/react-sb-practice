@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components/macro';
 
-interface TextLinkProps extends React.ComponentPropsWithoutRef<'a'> {
+export interface TextLinkProps extends React.ComponentPropsWithoutRef<'a'> {
   bold?: boolean;
   color?: "blue" | "gray";
 }
@@ -11,7 +11,7 @@ const StyledAnchorElement = styled.a<TextLinkProps>`
   font-weight: ${({ bold }) => bold ? "bold" : "normal"};
 `;
 
-const TextLink: React.FC<TextLinkProps> = ({
+export const TextLink: React.FC<TextLinkProps> = ({
   children,
   bold = false,
   color = "blue",
