@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Primary 1`] = `
+.c0 {
+  color: #61dafb;
+  font-weight: normal;
+}
+
+<a
+  className="c0"
+  color="blue"
+  href="http://localhost:6006"
+>
+  TextLink
+</a>
+`;
+
+exports[`PrimaryBold 1`] = `
+.c0 {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+<a
+  className="c0"
+  color="blue"
+  href="http://localhost:6006"
+>
+  TextLink
+</a>
+`;
+
+exports[`Secondary 1`] = `
+.c0 {
+  color: #ccc;
+  font-weight: normal;
+}
+
+<a
+  className="c0"
+  color="gray"
+  href="http://localhost:6006"
+>
+  TextLink
+</a>
+`;
+
+exports[`SecondaryBold 1`] = `
+.c0 {
+  color: #ccc;
+  font-weight: bold;
+}
+
+<a
+  className="c0"
+  color="gray"
+  href="http://localhost:6006"
+>
+  TextLink
+</a>
+`;
