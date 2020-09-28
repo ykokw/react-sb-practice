@@ -45,11 +45,13 @@
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
+    "@storybook/addon-storyshots": "^6.0.22",
     "@storybook/node-logger": "^6.0.21",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
     "@types/react-test-renderer": "^16.9.3",
     "babel-loader": "^8.1.0",
+    "jest-specific-snapshot": "^4.0.0",
     "jest-styled-components": "^7.0.3",
     "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",
@@ -57,6 +59,7 @@
   },
   "jest": {
     "transform": {
+      "^.+\\.stories\\.(js|jsx|ts|tsx)$": "@storybook/addon-storyshots/injectFileName",
       "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/ts-jest"
     }
   }

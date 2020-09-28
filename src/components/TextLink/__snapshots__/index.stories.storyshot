@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Primary 1`] = `
+exports[`Storyshots Components/TextLink Primary 1`] = `
 .c0 {
   color: #61dafb;
   font-weight: normal;
@@ -15,7 +15,7 @@ exports[`Primary 1`] = `
 </a>
 `;
 
-exports[`PrimaryBold 1`] = `
+exports[`Storyshots Components/TextLink Primary Bold 1`] = `
 .c0 {
   color: #61dafb;
   font-weight: bold;
@@ -30,7 +30,7 @@ exports[`PrimaryBold 1`] = `
 </a>
 `;
 
-exports[`Secondary 1`] = `
+exports[`Storyshots Components/TextLink Secondary 1`] = `
 .c0 {
   color: #ccc;
   font-weight: normal;
@@ -45,7 +45,7 @@ exports[`Secondary 1`] = `
 </a>
 `;
 
-exports[`SecondaryBold 1`] = `
+exports[`Storyshots Components/TextLink Secondary Bold 1`] = `
 .c0 {
   color: #ccc;
   font-weight: bold;
