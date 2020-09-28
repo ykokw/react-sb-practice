@@ -1,3 +1,11 @@
+# react-sb-practice
+
+- cra + typescript + storybookの練習用
+- masterブランチ: CSFで書いたstorybookをjestでsnapshotしたブランチ（jest-styled-componentsを使う）
+- feature/storyshots: 同じことをstoryshotsで楽にやったブランチ
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
